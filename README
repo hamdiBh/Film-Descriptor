@@ -1,3 +1,19 @@
 This is my first API on GitHub.
 This API allows you to get a list enconded in JSON that include the list of all films having the same name with the desired film sended in the request.
 The result will be JSON Object that include the title of the films, year of production, The poster of the film and the ID of each film on IMDB
+
+To have an idea about this API : 
+
+The API is located @ this adress : http://msese.6te.net/filmdescriptor/
+The API request 3 parameter : 
+ - First parameter : type : it takes 2 value (movie|series)
+ - Second parameter : s : this label is for the title of the desired Film/serie
+ - Last parameter : y: this label is for the year if production of the desired Film/serie , if you are not sure about it let it blank;
+
+Example : 
+	http://msese.6te.net/filmdescriptor/?type=movie&s=fast&y=
+	
+	http://msese.6te.net/filmdescriptor/? // the link for the API
+		type=movie 	// the first parameter : the type.
+		&s=fast   	// the title of the desired request. 
+		&y=       	// the year of production ; keep it blank if you are not sure about it :p
